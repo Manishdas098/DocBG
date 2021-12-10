@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color:snow;
+}
+.navbar{
+    height: 5.6rem;
+    width: 100vw;
+    background-color: black;
+ 
+   
+
+}
+@keyframes changelogo {
+    0%{color: aqua;}
+    20%{color: rgb(183, 214, 8);}
+    40%{color: rgb(255, 51, 0);}
+    60%{color: aqua;}
+    80%{color: rgb(30, 21, 110);}
+    100%{color: aqua;}
+}
+
+.navbar ul{
+   text-decoration: none;
+   display: inline;
+
+}
+.navbar ul li {
+    float: right;
+    margin-right: .3rem;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: .6rem;
+    margin-top: 2.1rem;
+ 
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 2rem;
+  display: inline;
+  font-size: 2.0rem;
+  font-weight: 550;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.logo{
+    margin: 1.2rem;
+    text-decoration: none;
+    font-size: 2.9rem;
+    color: white;  
+display: inline-block;
+    margin-top: 1.2rem;
+    font-weight: 700;
+    animation: changelogo 10s linear infinite;
+
+}
+/* .navbar ul a:after{
+content: "";
+display: flex;
+height: 1rem;
+width: 100%;
+background-color: pink;
+display: block;
+transition-duration: 999ms;
+margin-bottom: 1rem;
+
+} */
+/* .navbar ul a:hover:after{
+    width: 100%;
+} */
+.navbar li a {
+    /* background-color: transparent;
+    border: 2px solid grey; */
+    transition-delay: 1ms;
+    animation: nav 200s infinite linear;
+}
+@keyframes nav {
+   0%{color: aqua;}
+   20%{color: rgb(183, 214, 8);}
+   40%{color: rgb(255, 51, 0);}
+   60%{color: aqua;}
+   80%{color: rgb(30, 21, 110);}
+   100%{color: aqua;}
+}
+.navbar ul li a:hover{
+    
+    /* font-size: 1.1rem ; */
+ transform: translateY(-5rem);
+ color: brown;
+
+
+}
+
+@media  (max-width:900px){
+.navbar ul li a{
+    /* display: none; */
+}
+}
+@media (max-width:900px) {
+    html{
+        font-size: 53%;
+    }
+}
